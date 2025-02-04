@@ -29,7 +29,8 @@ const showToast = (message) => {
     setTimeout(() => toast.remove(), 5000);
 };
 
-submitImc.addEventListener("click", () => {
+submitImc.addEventListener("click", (e) => {
+    e.preventDefault()
     const peso = parseFloat(pesoImc.value);
     const altura = parseFloat(alturaImc.value);
     
